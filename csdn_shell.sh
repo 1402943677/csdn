@@ -1,6 +1,6 @@
 #!/bin/bash
 #定义博客前缀
-owner="https://blog.csdn.net/qq_34092585/article/list/"
+owner="https://blog.csdn.net/xxx/article/list/"
 #定义文章列表页数
 page=3
 #定义访问次数
@@ -18,7 +18,7 @@ for i in `seq $page`; do
 }
 done
 #清洗出改用户所有文章链接
-grep -o "\"https://blog.csdn.net/qq_34092585/article/details.*\"" index.txt | awk -F "target" '{gsub("\"","",$1);print $1 >> ".//url.txt"}'
+grep -o "\"https://blog.csdn.net/xxx/article/details.*\"" index.txt | awk -F "target" '{gsub("\"","",$1);print $1 >> ".//url.txt"}'
 
 #对所有文章链接排序去除
 sort -n url.txt | uniq | tee .//url_uniq.txt >/dev/null 2>&1
