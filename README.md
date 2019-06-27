@@ -3,6 +3,10 @@
 
 ### 使用方法
 
-- 修改owner变量为自己的链接
-- 修改page变量为自己列表页数
-- 修改times变量为要执行次数
+- 将owner变量中的xxx修改为自己的标识
+  eg：https://blog.csdn.net/qq_3424234/article/list/2
+  将xxx改为qq_3424234
+  
+- 将page变量修改为自己列表页数
+- 将times变量修改为要执行次数
+- 将
